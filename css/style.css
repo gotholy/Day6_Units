@@ -1,0 +1,142 @@
+@font-face {
+  font-family: MavenPro;
+  src: url(../assets/fonts/MavenPro-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: Gilda;
+  src: url(../assets/fonts/GildaDisplay-Regular.ttf);
+}
+html {
+  font-size: 62.5%;
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+header section {
+  box-sizing: border-box;
+  height: auto;
+  width: 100vw;
+  padding-bottom: 20vh;
+  background-color: #333333;
+  background-position: center;
+  background-size: cover;
+}
+img {
+  height: 5vh;
+  width: auto;
+  margin-top: 3vh;
+  margin-left: 3vw;
+}
+header section div {
+  background-image: linear-gradient(
+    38deg,
+    #ff00ff 25%,
+    #2727f0 75%,
+    #48cefa 100%
+  );
+  transition: 3ms;
+  margin: 20vh auto;
+  text-align: center;
+  width: 18vw;
+  height: 33vh;
+}
+header section div:hover {
+  background-image: linear-gradient(
+    225deg,
+    #ff00ff 25%,
+    #2727f0 75%,
+    #48cefa 100%
+  );
+}
+header section div h2 {
+  display: inline-block;
+  font-family: Gilda;
+  font-size: 4rem;
+  font-weight: 100;
+  color: white;
+  width: 11vw;
+  line-height: 10vh;
+}
+header section div p {
+  font-family: MavenPro;
+  display: inline-block;
+  font-size: 1.4rem;
+  word-spacing: 0.3rem;
+  width: 17vw;
+  height: auto;
+  color: white;
+  margin-top: 4vh;
+}
+header nav {
+  padding-right: 3vw;
+  line-height: 4vh;
+  text-align: right;
+  font-family: MavenPro;
+  font-size: 1.7rem;
+}
+.nav {
+  text-decoration: none;
+  color: #8c8c8c;
+  transition: 3ms;
+}
+.nav:hover {
+  text-shadow: 1px 1px 0.1em white;
+}
+main {
+  box-sizing: border-box;
+  height: 100vh;
+  width: 100vw;
+  margin-top: 20vh;
+}
+main section {
+  margin-left: 5vw;
+}
+main h3 {
+  font-size: 13.5rem;
+  color: #90909026;
+  margin-bottom: -6vh;
+  width: 47vw;
+  height: auto;
+}
+main h4 {
+  font-size: 5.5rem;
+  margin-bottom: 7vh;
+}
+main p {
+  font-family: MavenPro;
+  font-size: 1.4rem;
+  display: inline-block;
+  width: 47vw;
+  height: auto;
+}
+article {
+  display: inline-block;
+  height: auto;
+  width: 50vw;
+  text-align: left;
+  margin: 20vh 20vw 20vh 23vw;
+}
+.img {
+  display: inline-block;
+  height: auto;
+  width: 50vw;
+  text-align: center;
+  margin-bottom: 5vh;
+}
+.article {
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+  font-size: 3rem;
+  margin-left: 3vw;
+  margin-bottom: 1.5vh;
+  word-spacing: 2rem;
+}
+.article2 {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 2rem;
+  margin-left: 3vw;
+  margin-bottom: 1.5vh;
+  word-spacing: 2rem;
+}

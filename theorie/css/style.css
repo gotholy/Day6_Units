@@ -1,0 +1,80 @@
+/* ! mit dem Pseudo Element first-letter kann man den ersten buchstaheb stylen */
+
+section p::first-letter {
+  font-size: 50px;
+  background-color: red;
+}
+
+/* ! mit first line wird immer die erste zeile gestylt */
+section p::first-line {
+  background-color: blue;
+  color: white;
+}
+
+/* ! wir können das auch kombinieren */
+section p:last-of-type::first-line {
+  background-color: brown;
+}
+
+/* ! Damit kann ich in einer Liste das symbol vorne ändern (geht noch bei listen) */
+article li::marker {
+  content: "☼ ";
+}
+
+/* ! Damit kann ich das "markierte" stylen */
+*::selection {
+  color: red;
+  background-color: yellow;
+}
+
+/* ! befor und after könnne so benutzt werden: WICHTIG zu wissen ist, das sie nicht m HTML DOM auftauchen. Benutzt man für dekorative elemente*/
+article h4:nth-of-type(1)::after {
+  content: " - ich bin marzio 📎";
+  font-size: 40px;
+  background-color: antiquewhite;
+}
+
+article h4:nth-of-type(2)::before {
+  content: "❤️‍🩹 - ich bin befor ❤️‍🔥 ";
+  font-size: 20px;
+  color: aquamarine;
+}
+
+/* ! eine klasse wird immer mit einem . davor angesprochen */
+.ich-bin-eine-class {
+  background-color: rgb(255, 111, 0);
+  color: wheat;
+  padding: 20px;
+}
+.ich-bin-eine-class {
+  background-color: rgb(255, 0, 200);
+}
+
+.ich-bin-nocheine-class {
+  font-size: 30px;
+}
+
+/* ! id werden mit # angesprochen und haben mehr "macht" als class. In einem Klassenkonflikt wird immer die ID gewinnen (Selektorspezifität) */
+
+#ich-bin-ein-id {
+  background-color: blue;
+  color: aliceblue;
+}
+
+article a {
+  text-decoration: none;
+  color: white;
+  background-color: rgba(0, 26, 255, 0.541);
+  padding: 10px 25px;
+  border-radius: 10px;
+  margin-bottom: 50px;
+  /* display: inline-block; */
+  transition: 1s;
+  height: 100px;
+  width: 120px;
+  display: inline-block;
+}
+
+.btn:hover {
+  background: red;
+}
